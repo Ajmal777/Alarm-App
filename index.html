@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h2 id="title">Multiple Timers App</h2>
+
+        <header class="wrapper setter">
+            <div class="timer">
+                <div class="text">Set time:</div>
+                <div class="set-time">
+                    <input type="number" name="hours" id="hours" min="00" max="99" placeholder="hh">
+                    <span class="colon">:</span>
+                    <input type="number" name="minutes" id="minutes" min="00" max="60" placeholder="mm">
+                    <span class="colon">:</span>
+                    <input type="number" name="seconds" id="seconds" min="00" max="60" placeholder="ss">
+                </div>
+                <button id="set-btn" type="submit">Set</button>
+            </div>
+        </header>
+        
+        <h3 id="current-heading">Current timers</h3>
+        <main class="current-timers wrapper">
+            <div id="timers">
+                <h4 id="empty">You have no timers currently!</h3>
+            </div>
+        </main>
+
+        <footer>
+            <audio id="alarm-alert">
+                <source src="alarm-clock-soundEffect.mp3" type="audio/mp3">
+                Your browser does not support the audio file
+            </audio>
+        </footer>
+    </div>
+</body>
+</html>
